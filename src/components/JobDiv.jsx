@@ -21,7 +21,7 @@ const JobDiv = (props) => {
       <div className="text-orange-700 mb-3">
         <FaMapMarker className="inline text-lg mb-1 mr-1"/>
         {props.location}</div>
-      <Link className="rounded-md text-white bg-indigo-500 px-4 py-2 text-center text-sm hover:bg-indigo-600 cursor-pointer">Read More</Link>
+      <Link to={`/jobs/${props.id}`} className="rounded-md text-white bg-indigo-500 px-4 py-2 text-center text-sm hover:bg-indigo-600 cursor-pointer">Read More</Link>
     </div>
 
     </div>
