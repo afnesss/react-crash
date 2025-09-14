@@ -1,18 +1,18 @@
 {
   "jobs": [
     {
-      "id": "1",
-      "title": "Senior React Developer",
+      "title": "New Name Updated",
       "type": "Full-Time",
-      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
       "location": "Boston, MA",
+      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
       "salary": "$70K - $80K",
       "company": {
         "name": "NewTek Solutions",
         "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
         "contactEmail": "contact@teksolutions.com",
         "contactPhone": "555-555-5555"
-      }
+      },
+      "id": "1"
     },
     {
       "id": "2",
@@ -57,18 +57,32 @@
       }
     },
     {
-      "id": "5",
       "title": "Full Stack React Developer",
       "type": "Full-Time",
       "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
       "location": "Atlanta, GA",
       "salary": "$90K - $100K",
       "company": {
-        "name": "Browning Technologies",
+        "name": "Browning Technologiesіesiesi",
         "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
         "contactEmail": "contact@consecteturadipisicing.com",
         "contactPhone": "555-555-5555"
-      }
+      },
+      "id": "5"
+    },
+    {
+      "title": "Anastasiia",
+      "type": "Remote",
+      "description": "hhhhhhh",
+      "location": "hhhhhh",
+      "salary": "Under $50K",
+      "company": {
+        "name": "Other",
+        "description": "gg",
+        "contactEmail": "af.nesss07@gmail.com",
+        "contactPhone": "0508095432"
+      },
+      "id": "72f4"
     }
   ]
 }

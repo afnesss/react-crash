@@ -88,7 +88,7 @@ const JobPage = ({deleteJob}) => {
 
           <WhiteBox>
             <h2 className="font-bold text-black mb-4 text-xl">Manage Job</h2>
-            <Button path='/edit-job' title="Edit Job" bg="bg-indigo-500 hover:bg-indigo-700"/>
+            <Button path={`/edit-job/${job.id}`} title="Edit Job" bg="bg-indigo-500 hover:bg-indigo-700"/>
 
             <button
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block" onClick={() =>{ onDeleteClick(job.id)}}>
