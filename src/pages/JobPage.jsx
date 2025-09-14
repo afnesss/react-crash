@@ -1,17 +1,31 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom"
-import { useParams, useLoaderData } from "react-router-dom"
+import { useParams, useLoaderData, useNavigate} from "react-router-dom"
 import {useState, useEffect} from 'react'
 import { FaMapMarker, FaArrowLeft } from 'react-icons/fa'
 // import Spinner from "../components/Spinner"
 import WhiteBox from "../components/jobPage/WhiteBox"
 import Button from "../components/Button"
+import { toast } from "react-toastify"
 
 
-const JobPage = () => {
+const JobPage = ({deleteJob}) => {
   // const {id} = useParams();
   const job = useLoaderData();
+  const navigate = useNavigate();
+
+
+  const onDeleteClick = (jobId) => {
+    const confirm = window.confirm('Are you sure you want to delete this listing')
+    if (!confirm){
+      return
+    }
+
+    deleteJob(jobId);
+    toast.success('job deleted successfully')
+    navigate('/jobs');
+  }
   // const [job, setJob] = useState([]);
   // const [loading, setLoading] = useState(true);
 
@@ -31,7 +45,6 @@ const JobPage = () => {
   //   }
   //   fetchJob();
   // }, [id])
-
   return (
     <>
     
@@ -77,14 +90,14 @@ const JobPage = () => {
             <h2 className="font-bold text-black mb-4 text-xl">Manage Job</h2>
             <Button path='/edit-job' title="Edit Job" bg="bg-indigo-500 hover:bg-indigo-700"/>
 
-            <Button path='/edit-job' title="Delete Job" bg="bg-red-500 hover:bg-red-600"/>
+            <button
+              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block" onClick={() =>{ onDeleteClick(job.id)}}>
+              Delete Job
+            </button>
 
           </WhiteBox>
 
-          
         </div>
-
-
       </section>
     </>
     )
